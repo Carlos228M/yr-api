@@ -1,0 +1,33 @@
+{
+    "name": "node-template",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Base template for node projects",
+    "scripts": {
+        "dev": "nodemon src/index.js",
+        "start": "node src/index.js",
+        "lint": "eslint src/**/*.js --fix",
+        "prettier": "prettier --write ."
+    },
+    "author": {
+        "name": "228 Marketing",
+        "url": "https://228marketing.com"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "8.23.0",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-config-standard": "17.0.0",
+        "eslint-plugin-import": "2.26.0",
+        "eslint-plugin-n": "15.2.5",
+        "eslint-plugin-promise": "6.0.1",
+        "nodemon": "2.0.19",
+        "prettier": "2.7.1"
+    },
+    "imports": {
+        "#lib/*": "./src/lib/*"
+    },
+    "dependencies": {
+        "dotenv": "16.0.2"
+    }
+}
